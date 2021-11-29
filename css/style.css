@@ -7,6 +7,7 @@ CSS LAYOUT:
     3. BACKGROUND
     4. NAV
     5. INPUT SECTION
+    6. MEDIA QUERIES
 
 ATTRIBUTE=VALUE SELECTORS ORDERED BY:
     1.SIZE
@@ -201,4 +202,33 @@ nav {
 }:-moz-placeholder { /* Firefox 4 - 18 */
     color: white;
     opacity: 0.7;
+}
+
+
+
+
+/* || MEDIA QUERIES */
+@media all and (max-width: 710px) {
+    .container-1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .swap-icon {
+        margin: 10px auto;
+        display: block;
+    }
+
+    .inputs{
+        display: inline;
+        margin: 50px 50px;
+    }
+
+    .inputs input {
+        width: 100%;
+    }
+
+    .farenheit-symbol, .celsius-symbol {
+        width: 50px;
+    }
 }
